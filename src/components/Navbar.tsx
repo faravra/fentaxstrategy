@@ -1,7 +1,19 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
+import { useState } from "react";
+
+const navLinks = [
+  { name: "Home", path: "/" },
+  { name: "About", path: "/about" },
+  { name: "Services", path: "/services" },
+  { name: "Contact", path: "/contact" },
+];
 
 const Navbar = () => {
+  const location = useLocation();
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="container mx-auto px-6 py-4">
@@ -16,46 +28,65 @@ const Navbar = () => {
             </span>
           </Link>
 
-          {/* Navigation Links */}
+          {/* Navigation Links - Desktop */}
           <div className="hidden md:flex items-center gap-8">
-            <Link 
-              to="/" 
-              className="text-muted-foreground hover:text-gold transition-colors duration-300 font-medium"
-            >
-              Home
-            </Link>
-            <Link 
-              to="/about" 
-              className="text-gold font-medium"
-            >
-              About
-            </Link>
-            <Link 
-              to="/services" 
-              className="text-muted-foreground hover:text-gold transition-colors duration-300 font-medium"
-            >
-              Services
-            </Link>
-            <Link 
-              to="/contact" 
-              className="text-muted-foreground hover:text-gold transition-colors duration-300 font-medium"
-            >
-              Contact
-            </Link>
+            {navLinks.map((link) => (
+              <Link
+                key={link.path}
+                to={link.path}
+                className={`font-medium transition-colors duration-300 ${
+                  location.pathname === link.path
+                    ? "text-gold"
+                    : "text-muted-foreground hover:text-gold"
+                }`}
+              >
+                {link.name}
+              </Link>
+            ))}
           </div>
 
-          {/* CTA Button */}
+          {/* CTA Button - Desktop */}
           <Button variant="gold" size="lg" className="hidden md:inline-flex">
-            Get Started
+            Konsultasi Gratis
           </Button>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden text-foreground p-2">
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
+          <button
+            className="md:hidden text-foreground p-2"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden mt-4 pb-4 border-t border-border/50 pt-4 animate-fade-in">
+            <div className="flex flex-col gap-4">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`font-medium transition-colors duration-300 py-2 ${
+                    location.pathname === link.path
+                      ? "text-gold"
+                      : "text-muted-foreground hover:text-gold"
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              ))}
+              <Button variant="gold" size="lg" className="mt-2">
+                Konsultasi Gratis
+              </Button>
+            </div>
+          </div>
+        )}
       </div>
     </nav>
   );
