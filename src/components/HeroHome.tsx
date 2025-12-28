@@ -7,7 +7,8 @@ const serviceQuickLinks = [
   "Konsultasi Perpajakan",
   "Tax Planning",
   "Penyusunan SPT",
-  "Pendampingan Pajak",
+  "Pemeriksaan Pajak",,
+  "Penyusunan Laporan Keuangan"
 ];
 
 const HeroHome = () => {
