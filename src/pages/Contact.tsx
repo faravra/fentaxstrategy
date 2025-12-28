@@ -18,20 +18,20 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Telepon / WhatsApp",
-    value: "+62 812-3456-7890",
+    value: "+62 821 3845 8433",
     href: "tel:+6281234567890"
   },
   {
     icon: Mail,
     title: "Email",
-    value: "info@fentaxstrategy.com",
-    href: "mailto:info@fentaxstrategy.com"
+    value: "fentaxstrategy@gmail.com",
+    href: "mailto:fentaxstrategy@gmail.com"
   },
   {
     icon: MapPin,
     title: "Alamat Kantor",
-    value: "Jl. Sudirman No. 123, Jakarta Pusat, DKI Jakarta 10110",
-    href: "https://maps.google.com/?q=Jl.+Sudirman+No.+123+Jakarta"
+    value: "Jln. Sugriwo IX No. 78, Krapyak, Semarang Barat, Kota Semarang",
+    href: "https://maps.app.goo.gl/dfwS6Ki7wD24KBd76"
   },
   {
     icon: Clock,
@@ -148,7 +148,7 @@ const Contact = () => {
                     <p className="text-muted-foreground text-sm">Respon cepat untuk pertanyaan Anda</p>
                   </div>
                   <Button variant="default" className="bg-green-500 hover:bg-green-600" asChild>
-                    <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer">
+                    <a href="https://wa.me/6282138458433" target="_blank" rel="noopener noreferrer">
                       Chat Sekarang
                     </a>
                   </Button>
@@ -255,7 +255,7 @@ const Contact = () => {
           </div>
           <div className="rounded-3xl overflow-hidden border border-border/50 h-[400px] md:h-[500px]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.666558694949!2d106.82305831536927!3d-6.175110462217065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f5d2e764b12d%3A0x3d2ad6e1e0e9bcc8!2sJl.%20Jend.%20Sudirman%2C%20Jakarta!5e0!3m2!1sen!2sid!4v1640000000000!5m2!1sen!2sid"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.224432496437!2d110.3644265!3d-6.9828206999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708b06e28c762f%3A0x9157289cb27cc568!2sFEN%20TAX%20STRATEGY!5e0!3m2!1sid!2sid!4v1766882598004!5m2!1sid!2sid"
               width="100%"
               height="100%"
               style={{ border: 0 }}

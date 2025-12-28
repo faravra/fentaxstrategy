@@ -42,18 +42,18 @@ const Footer = () => {
           <div>
             <h4 className="font-display text-lg font-semibold text-foreground mb-6">Quick Links</h4>
             <ul className="space-y-3">
-              {['Home', 'About', 'Services', 'Blog', 'Contact'].map((link) => (
+              {['Home', 'About', 'Services', 'Contact'].map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-muted-foreground hover:text-gold transition-colors">
+                  <Link to={link === 'Home' ? '/' : `/${link.toLowerCase()}`} className="text-muted-foreground hover:text-gold transition-colors">
                     {link}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
           {/* Services */}
-          <div>
+          {/* <div>
             <h4 className="font-display text-lg font-semibold text-foreground mb-6">Layanan</h4>
             <ul className="space-y-3">
               {['Konsultasi Pajak', 'Pelaporan SPT', 'Tax Planning', 'Tax Review', 'Audit Support'].map((service) => (
@@ -64,7 +64,7 @@ const Footer = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
           {/* Contact Info */}
           <div>
@@ -73,20 +73,20 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-gold flex-shrink-0 mt-0.5" />
                 <span className="text-muted-foreground text-sm">
-                  Jl. Sudirman No. 123, Jakarta Pusat 10220
+                  Jln. Sugriwo IX No. 78, Krapyak, Semarang Barat, Kota Semarang
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-gold flex-shrink-0" />
-                <span className="text-muted-foreground text-sm">+62 21 1234 5678</span>
+                <span className="text-muted-foreground text-sm">+62 821 3845 8433</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-gold flex-shrink-0" />
-                <span className="text-muted-foreground text-sm">info@fentax.co.id</span>
+                <span className="text-muted-foreground text-sm">fentaxstrategy@gmail.com</span>
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="w-5 h-5 text-gold flex-shrink-0" />
-                <span className="text-muted-foreground text-sm">Sen - Jum: 09:00 - 18:00</span>
+                <span className="text-muted-foreground text-sm">Sen - Jum: 08:00 - 17:00</span>
               </li>
             </ul>
           </div>
@@ -96,7 +96,7 @@ const Footer = () => {
         <div className="pt-8 border-t border-border/30">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-muted-foreground text-sm">
-              © 2024 FenTax Strategy. All rights reserved.
+              © 2026 FenTax Strategy. All rights reserved.
             </p>
             <div className="flex gap-6">
               <a href="#" className="text-muted-foreground hover:text-gold text-sm transition-colors">

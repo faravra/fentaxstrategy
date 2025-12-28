@@ -273,9 +273,9 @@ const Services = () => {
                   </Link>
                 </Button>
                 <Button variant="goldOutline" size="lg" asChild>
-                  <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer">
-                    Chat via WhatsApp
-                  </a>
+                    <a href="https://wa.me/6282138458433" target="_blank" rel="noopener noreferrer">
+                      Chat Sekarang
+                    </a>
                 </Button>
               </div>
             </div>

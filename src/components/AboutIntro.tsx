@@ -1,5 +1,6 @@
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import meetingImage from "@/assets/about-meeting.jpg";
 
 const features = [
@@ -31,9 +32,9 @@ const AboutIntro = () => {
             </div>
 
             {/* Floating accent */}
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-xl bg-gradient-to-br from-gold to-gold-light shadow-gold flex items-center justify-center">
+            <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-xl bg-gradient-to-br from-gold to-gold-light shadow-gold flex items-center justify-center" style={{ zIndex: "10000000" }}>
               <div className="text-center">
-                <span className="text-3xl font-display font-bold text-primary-foreground">15+</span>
+                <span className="text-3xl font-display font-bold text-primary-foreground">5+</span>
                 <p className="text-xs font-medium text-primary-foreground/80">Tahun Pengalaman</p>
               </div>
             </div>
@@ -73,8 +74,12 @@ const AboutIntro = () => {
               ))}
             </div>
 
+
+
             <Button variant="gold" size="lg">
-              Selengkapnya
+              <Link to="/contact">
+                Selengkapnya
+              </Link>
             </Button>
           </div>
         </div>

@@ -30,11 +30,15 @@ const CTASection = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button variant="gold" size="xl" className="group">
-            Mulai Konsultasi
-            <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            <a href="https://wa.me/6282138458433" target="_blank" rel="noopener noreferrer" style={{ display: "flex", alignItems: 'center', gap: "8px" }}>
+              Mulai Konsultasi
+              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            </a>
           </Button>
           <Button variant="goldOutline" size="xl">
-            Hubungi Kami
+            <a href="https://wa.me/6282138458433" target="_blank" rel="noopener noreferrer">
+              Hubungi Kami
+            </a>
           </Button>
         </div>
       </div>

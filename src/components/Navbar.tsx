@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/logo192.png";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -20,11 +21,12 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-gold via-gold-light to-gold flex items-center justify-center shadow-gold-sm group-hover:shadow-gold transition-shadow duration-300">
+            {/* <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-gold via-gold-light to-gold flex items-center justify-center shadow-gold-sm group-hover:shadow-gold transition-shadow duration-300">
               <span className="text-primary-foreground font-display font-bold text-xl">F</span>
-            </div>
+            </div> */}
+            <img src={logo} alt="Logo" className="w-[64px]"/> 
             <span className="font-display text-xl font-semibold text-foreground">
-              Fen<span className="text-gold">Tax</span>
+              Fen Tax <span className="text-gold">Strategy</span>
             </span>
           </Link>
 
@@ -47,7 +49,9 @@ const Navbar = () => {
 
           {/* CTA Button - Desktop */}
           <Button variant="gold" size="lg" className="hidden md:inline-flex">
-            Konsultasi Gratis
+            <a href="https://wa.me/6282138458433" target="_blank" rel="noopener noreferrer">
+              Konsultasi Gratis
+            </a>
           </Button>
 
           {/* Mobile Menu Button */}
