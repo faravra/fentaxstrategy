@@ -7,9 +7,9 @@ interface StatItem {
 }
 
 const stats: StatItem[] = [
-  { value: 1345, suffix: "+", label: "Klien Puas" },
-  { value: 1000, suffix: "+", label: "Proyek Selesai" },
-  { value: 15, suffix: "+", label: "Tahun Berpengalaman" },
+  { value: 100, suffix: "+", label: "Klien Puas" },
+  { value: 100, suffix: "+", label: "Proyek Selesai" },
+  { value: 10, suffix: "+", label: "Tahun Berpengalaman" },
   { value: 99, suffix: "%", label: "Kepatuhan Pelaporan" },
 ];
 

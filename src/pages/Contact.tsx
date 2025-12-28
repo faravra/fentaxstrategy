@@ -18,7 +18,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Telepon / WhatsApp",
-    value: "+62 821 3845 8433",
+    value: "+62 821 3845 8433", 
     href: "tel:+6281234567890"
   },
   {
