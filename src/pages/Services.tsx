@@ -10,9 +10,9 @@ import {
   RefreshCw, 
   Search, 
   Scale, 
-  Gavel,
   CheckCircle,
-  ArrowRight
+  ArrowRight,
+  CircleDollarSign
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -61,10 +61,10 @@ const servicesData = [
     id: "laporan-keuangan-pbpk",
     icon: FileCheck,
     title: "Laporan Keuangan PBPK",
-    shortDesc: "Penyusunan Laporan Keuangan sesuai PP Nomor 49 Tahun 2025.",
-    fullDesc: "Fen Tax Strategy menyediakan layanan Penyusunan Laporan Keuangan berbasis PBPK (Pelaporan Bersama Pelaporan Keuangan) sesuai dengan ketentuan Peraturan Pemerintah Nomor 49 Tahun 2025, yang mengintegrasikan laporan keuangan dengan pelaporan perpajakan secara sistematis dan terstandar. Layanan ini bertujuan membantu wajib pajak memastikan keselarasan antara laporan keuangan komersial dan data perpajakan yang dilaporkan kepada otoritas pajak.",
+    shortDesc: "Penyusunan Laporan Keuangan sesuai PP Nomor 43 Tahun 2025.",
+    fullDesc: "Fen Tax Strategy menyediakan layanan Penyusunan Laporan Keuangan berbasis PBPK (Pelaporan Bersama Pelaporan Keuangan) sesuai dengan ketentuan Peraturan Pemerintah Nomor 43 Tahun 2025, yang mengintegrasikan laporan keuangan dengan pelaporan perpajakan secara sistematis dan terstandar. Layanan ini bertujuan membantu wajib pajak memastikan keselarasan antara laporan keuangan komersial dan data perpajakan yang dilaporkan kepada otoritas pajak.",
     features: [
-      "Sesuai PP Nomor 49 Tahun 2025",
+      "Sesuai PP Nomor 43 Tahun 2025",
       "Integrasi laporan keuangan & perpajakan",
       "Akurasi dan transparansi pelaporan",
       "Meminimalkan risiko ketidaksesuaian data"
@@ -111,7 +111,7 @@ const servicesData = [
   },
   {
     id: "transfer-pricing",
-    icon: Scale,
+    icon: CircleDollarSign,
     title: "Transfer Pricing Documentation",
     shortDesc: "Penyusunan dokumentasi penentuan harga transfer.",
     fullDesc: "Fen Tax Strategy menyediakan layanan Penyusunan Transfer Pricing Documentation untuk membantu wajib pajak memenuhi kewajiban dokumentasi penentuan harga transfer sesuai dengan ketentuan perpajakan yang berlaku di Indonesia serta prinsip kewajaran dan kelaziman usaha (arm's length principle). Layanan ini mencakup analisis struktur grup usaha, karakterisasi fungsi, aset, dan risiko, pemilihan metode penentuan harga transfer yang tepat, serta penyusunan dokumentasi yang komprehensif.",
@@ -124,7 +124,7 @@ const servicesData = [
   },
   {
     id: "sengketa-banding",
-    icon: Gavel,
+    icon: Scale,
     title: "Sengketa Banding di Pengadilan Pajak",
     shortDesc: "Pendampingan sengketa banding untuk memperjuangkan hak WP.",
     fullDesc: "Fen Tax Strategy menyediakan layanan Pendampingan Sengketa Banding di Pengadilan Pajak untuk membantu wajib pajak dalam memperjuangkan haknya secara profesional dan sesuai dengan ketentuan hukum perpajakan yang berlaku. Kami mendampingi klien sejak tahap analisis sengketa, penyusunan dan penelaahan berkas banding, penyusunan argumentasi hukum dan perpajakan, hingga pendampingan selama proses persidangan di Pengadilan Pajak.",

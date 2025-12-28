@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import aboutImage from "@/assets/about-section.jpg";
 
 const stats = [
-  { value: "15+", label: "Tahun Pengalaman Konsultasi" },
-  { value: "1000+", label: "Proyek Perpajakan Selesai" },
-  { value: "500+", label: "Klien Puas Dilayani" },
+  { value: "10+", label: "Tahun Pengalaman Konsultasi" },
+  { value: "100+", label: "Proyek Perpajakan Selesai" },
+  { value: "100+", label: "Klien Puas Dilayani" },
   { value: "99%", label: "Tingkat Kepatuhan Pajak" },
 ];
 

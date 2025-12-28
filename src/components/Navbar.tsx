@@ -26,7 +26,8 @@ const Navbar = () => {
             </div> */}
             <img src={logo} alt="Logo" className="w-[64px]"/> 
             <span className="font-display text-xl font-semibold text-foreground">
-              Fen Tax <span className="text-gold">Strategy</span>
+              Fen Tax Strategy
+              {/* <span className="text-gold">Strategy</span> */}
             </span>
           </Link>
 

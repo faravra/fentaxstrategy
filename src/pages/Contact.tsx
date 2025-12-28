@@ -36,7 +36,7 @@ const contactInfo = [
   {
     icon: Clock,
     title: "Jam Kerja",
-    value: "Senin - Jumat: 09:00 - 17:00 WIB",
+    value: "Senin - Jumat: 08:00 - 17:00 WIB",
     href: null
   }
 ];

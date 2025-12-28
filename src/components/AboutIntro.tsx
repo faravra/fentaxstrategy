@@ -4,10 +4,15 @@ import { Link } from "react-router-dom";
 import meetingImage from "@/assets/about-meeting.jpg";
 
 const features = [
-  "Konsultasi Pajak Pribadi & Badan",
-  "Pelaporan & Pengisian SPT",
-  "Tax Planning & Tax Review",
+  "Konsultasi Perpajakan",
+  "Perencanaan Pajak / Tax Planning",
+  "Penyusunan SPT Masa & Tahunan",
+  "Laporan Keuangan PBPK",
+  "Pendampingan SP2DK",
+  "Restitusi PPH & PPN",
   "Pendampingan Pemeriksaan Pajak",
+  "Transfer Pricing Documentation",
+  "Sengketa Banding di Pengadilan Pajak",
 ];
 
 const AboutIntro = () => {
@@ -34,7 +39,7 @@ const AboutIntro = () => {
             {/* Floating accent */}
             <div className="absolute -bottom-6 -right-6 w-32 h-32 rounded-xl bg-gradient-to-br from-gold to-gold-light shadow-gold flex items-center justify-center" style={{ zIndex: "10000000" }}>
               <div className="text-center">
-                <span className="text-3xl font-display font-bold text-primary-foreground">5+</span>
+                <span className="text-3xl font-display font-bold text-primary-foreground">10+</span>
                 <p className="text-xs font-medium text-primary-foreground/80">Tahun Pengalaman</p>
               </div>
             </div>

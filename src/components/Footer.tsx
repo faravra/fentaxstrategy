@@ -1,5 +1,6 @@
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
+import logo from "@/assets/logo192.png";
 
 const Footer = () => {
   return (
@@ -12,11 +13,13 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-gold via-gold-light to-gold flex items-center justify-center shadow-gold-sm">
+              {/* <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-gold via-gold-light to-gold flex items-center justify-center shadow-gold-sm">
                 <span className="text-primary-foreground font-display font-bold text-2xl">F</span>
-              </div>
-              <span className="font-display text-2xl font-semibold text-foreground">
-                Fen<span className="text-gold">Tax</span>
+              </div> */}
+              <img src={logo} alt="Logo" className="w-[64px]"/> 
+              <span className="font-display text-xl font-semibold text-foreground">
+                Fen Tax Strategy
+                {/* <span className="text-gold">Strategy</span> */}
               </span>
             </Link>
             <p className="text-muted-foreground mb-6 leading-relaxed">

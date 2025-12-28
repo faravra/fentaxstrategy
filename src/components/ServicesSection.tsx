@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, MessageSquare, FileText, Calculator, FileCheck, AlertCircle, RefreshCw, Search, Scale, Gavel } from "lucide-react";
+import { ArrowRight, MessageSquare, FileText, Calculator, FileCheck, AlertCircle, RefreshCw, Search, Scale, CircleDollarSign } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const services = [
@@ -39,12 +39,12 @@ const services = [
     description: "Pendampingan menghadapi proses pemeriksaan oleh DJP secara tertib, terukur, dan sesuai ketentuan perundang-undangan yang berlaku.",
   },
   {
-    icon: Scale,
+    icon: CircleDollarSign,
     title: "Transfer Pricing",
     description: "Penyusunan dokumentasi penentuan harga transfer sesuai ketentuan perpajakan Indonesia dan prinsip kewajaran usaha (arm's length principle).",
   },
   {
-    icon: Gavel,
+    icon: Scale,
     title: "Sengketa Banding",
     description: "Pendampingan sengketa banding di Pengadilan Pajak untuk memperjuangkan hak wajib pajak secara profesional dan sesuai hukum.",
   },

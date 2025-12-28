@@ -61,7 +61,7 @@ const VisionMissionSection = () => {
         <div className="mt-12 text-center opacity-0 animate-fade-in" style={{ animationDelay: '0.4s' }}>
           <div className="inline-flex items-center gap-6 bg-card/50 backdrop-blur-sm px-8 py-6 rounded-2xl border border-gold/20">
             <div className="text-center">
-              <span className="font-display text-5xl font-bold text-gradient-gold">97%</span>
+              <span className="font-display text-5xl font-bold text-gradient-gold">99%</span>
               <p className="text-muted-foreground text-sm mt-2">Tingkat keberhasilan penyelesaian kasus perpajakan</p>
             </div>
           </div>
